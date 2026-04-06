@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursed Dice Dungeon — Roguelike Deckbuilder</title>
+  <meta name="description" content="Survive the card dungeon — or die trying. 35 hero classes, 110 monsters and 12 brutal bosses. A premium roguelike deckbuilder with dice-based combat. No ads, ever." />
+  <meta name="keywords" content="deckbuilder,dungeon crawler,spire,card battler,strategy,single,fantasy,slay,indie,monster,loot,rogue,cursed dice dungeon" />
+  <meta property="og:title" content="Cursed Dice Dungeon — Roguelike Deckbuilder" />
+  <meta property="og:description" content="18 hero classes, 110 monsters, 12 brutal bosses. Roll dice. Flip cards. Survive." />
+  <meta property="og:image" content="Game Logo.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cursed Dice Dungeon" />
+  <meta name="twitter:description" content="A premium roguelike deckbuilder with dice combat. No ads, ever." />
+  <link rel="icon" href="Icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="Icon.png" alt="Cursed Dice Dungeon Icon" class="nav-icon" />
+        <span>Cursed Dice Dungeon</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#monsters">Monsters</a></li>
+        <li><a href="#download" class="nav-cta">Download</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#monsters">Monsters</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Premium Roguelike · No Ads · Ever</div>
+      <img src="Game Logo.png" alt="Cursed Dice Dungeon Logo" class="hero-logo reveal" loading="eager" />
+      <p class="hero-tagline reveal">Roll the dice. Flip the cards. <br /><em>Survive the dungeon.</em></p>
+      <p class="hero-sub reveal">
+        A premium roguelike deckbuilder that combines dice-based combat, card battler tactics,
+        and deep RPG strategy in a procedurally generated fantasy dungeon.
+        Every run is different. Every decision matters.
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="https://apps.apple.com/us/app/cursed-dice-dungeon/id6755833256" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.maxdk9.dicedungeoncrawler" class="btn btn-secondary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76a2 2 0 0 1-.89-.21 2.16 2.16 0 0 1-1.1-1.9V2.35A2.16 2.16 0 0 1 2.29.45a2 2 0 0 1 2.05.08l17.27 9.75a2.17 2.17 0 0 1 0 3.78L4.34 23.76a2 2 0 0 1-1.16.35zm.47-20.9v18.28L19.46 12z"/></svg>
+          Google Play
+        </a>
+        <a href="https://youtu.be/4R80HAOgbP8" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.58 7.19a2.76 2.76 0 0 0-1.94-1.95C18.0 5 12 5 12 5s-6 0-7.64.24a2.76 2.76 0 0 0-1.94 1.95A29 29 0 0 0 2.18 12a29 29 0 0 0 .24 4.81 2.76 2.76 0 0 0 1.94 1.95C6 19 12 19 12 19s6 0 7.64-.24a2.76 2.76 0 0 0 1.94-1.95A29 29 0 0 0 21.82 12a29 29 0 0 0-.24-4.81zM9.82 15.27V8.73L15.45 12z"/></svg>
+          Watch Gameplay
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar reveal">
+    <div class="stat-item">
+      <span class="stat-num" data-target="35">0</span><span class="stat-plus">+</span>
+      <span class="stat-label">Hero Classes</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="110">0</span>
+      <span class="stat-label">Monsters</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="12">0</span>
+      <span class="stat-label">Brutal Bosses</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="130">0</span>
+      <span class="stat-plus">+</span>
+      <span class="stat-label">Artifacts</span>
+    </div>
+  </div>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <h2 class="section-title reveal">
+        <span class="title-glow">Deep Strategy,</span> Simple Rules
+      </h2>
+      <p class="section-subtitle reveal">
+        A genre-defining blend of roguelike, card battler, and dice combat
+      </p>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎲</div>
+          <h3>Dice &amp; Card Combat</h3>
+          <p>Roll dice to attack, flip cards to explore. Higher rolls deliver stronger blows — but luck alone won't save you in the cursed dungeon.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">⚔️</div>
+          <h3>18 Hero Classes</h3>
+          <p>Discover unique playstyles — from aggressive warriors to cunning mages. Experiment, build synergies, and master the dungeon your way.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🏰</div>
+          <h3>Procedural Dungeons</h3>
+          <p>No two runs are ever the same. Every route, every enemy, every reward is generated fresh — delivering infinite replayability.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💀</div>
+          <h3>110 Monsters &amp; 12 Bosses</h3>
+          <p>Each enemy has unique attack patterns. Study them, adapt your strategy, and survive their onslaughts to claim victory.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💎</div>
+          <h3>130+ Artifacts</h3>
+          <p>Collect powerful artifacts, build devastating synergies, and turn each run into an epic tale of survival and triumph.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🚫</div>
+          <h3>No Ads. Ever.</h3>
+          <p>Zero ads — guaranteed. Enjoy pure, uninterrupted roguelike adventure the way it was meant to be played.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCREENSHOTS ===== -->
+  <section class="screenshots" id="screenshots">
+    <div class="section-container">
+      <h2 class="section-title reveal">See the <span class="title-glow">Dungeon</span></h2>
+      <p class="section-subtitle reveal">Swipe through the gameplay experience</p>
+
+      <div class="carousel-wrapper reveal">
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8249;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/1.png" alt="Cursed Dice Dungeon screenshot 1" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/2.png" alt="Cursed Dice Dungeon screenshot 2" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/3.png" alt="Cursed Dice Dungeon screenshot 3" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/4.png" alt="Cursed Dice Dungeon screenshot 4" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/5.png" alt="Cursed Dice Dungeon screenshot 5" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/6.png" alt="Cursed Dice Dungeon screenshot 6" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/7.png" alt="Cursed Dice Dungeon screenshot 7" loading="lazy" /></div>
+            <div class="carousel-slide"><img src="Cursed Dice - screenshots/iphone-size/8.png" alt="Cursed Dice Dungeon screenshot 8" loading="lazy" /></div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8250;</button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== MONSTERS ===== -->
+  <section class="monsters" id="monsters">
+    <div class="section-container">
+      <h2 class="section-title reveal">Face the <span class="title-glow">Cursed</span></h2>
+      <p class="section-subtitle reveal">110 monsters and 12 brutal bosses await — each with unique attack patterns</p>
+      <div class="monsters-grid">
+        <div class="monster-card reveal">
+          <div class="monster-img-wrap">
+            <img src="Monsters/01.png" alt="Dungeon Monster" loading="lazy" />
+          </div>
+        </div>
+        <div class="monster-card reveal">
+          <div class="monster-img-wrap">
+            <img src="Monsters/02.png" alt="Dungeon Monster" loading="lazy" />
+          </div>
+        </div>
+        <div class="monster-card reveal">
+          <div class="monster-img-wrap">
+            <img src="Monsters/17.png" alt="Dungeon Monster" loading="lazy" />
+          </div>
+        </div>
+        <div class="monster-card reveal">
+          <div class="monster-img-wrap">
+            <img src="Monsters/MainMenuMonster.png" alt="Dungeon Boss" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO ===== -->
+  <section class="video-section reveal">
+    <div class="section-container">
+      <h2 class="section-title reveal">Watch the <span class="title-glow">Action</span></h2>
+      <p class="section-subtitle reveal">See dice, cards, and tactics in action</p>
+      <div class="video-wrapper reveal">
+        <div class="video-embed">
+          <a href="https://youtu.be/4R80HAOgbP8" target="_blank" rel="noopener" class="video-thumbnail-link" id="videoLink">
+            <div class="video-play-overlay">
+              <div class="video-play-btn">
+                <svg viewBox="0 0 24 24" fill="white" width="40" height="40"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <p>Watch Gameplay on YouTube</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOWNLOAD CTA ===== -->
+  <section class="download" id="download">
+    <div class="download-bg"></div>
+    <div class="section-container download-content">
+      <h2 class="section-title reveal">Ready to <span class="title-glow">Enter the Dungeon?</span></h2>
+      <p class="section-subtitle reveal">
+        Every run is a new challenge. Roll the dice, flip the cards, and build your strategy as you descend deeper.
+        <strong>Victory belongs to those who master luck, tactics, and decision-making.</strong>
+      </p>
+      <div class="download-badges reveal">
+        <a href="https://apps.apple.com/us/app/cursed-dice-dungeon/id6755833256" target="_blank" rel="noopener" class="store-badge">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.maxdk9.dicedungeoncrawler" target="_blank" rel="noopener" class="store-badge">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" />
+        </a>
+      </div>
+      <div class="no-ads-badge reveal">⚔️ No ads &nbsp;·&nbsp; Deep strategy &nbsp;·&nbsp; Play forever</div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="Icon.png" alt="Icon" class="footer-icon" />
+        <span>Cursed Dice Dungeon</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://apps.apple.com/us/app/cursed-dice-dungeon/id6755833256" target="_blank" rel="noopener">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.maxdk9.dicedungeoncrawler" target="_blank" rel="noopener">Google Play</a>
+        <a href="https://youtu.be/4R80HAOgbP8" target="_blank" rel="noopener">Gameplay Video</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <p class="footer-copy">© 2025 Maksym Matiushenko. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
